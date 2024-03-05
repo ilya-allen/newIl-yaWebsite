@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;
+    background-image: url("background.jpg");
+    background-size: 100%;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    backdrop-filter: blur(5px);
+}
