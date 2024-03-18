@@ -12,7 +12,7 @@ homeButton.addEventListener('click', function() {
 
     setTimeout(function() {
         scrollBanner.style.height = '900px';
-        bannerText.style.fontSize = '110px'
+        bannerText.style.opacity = '100%'
         homeButton.style.width = '1px'
     }, 500)
 
