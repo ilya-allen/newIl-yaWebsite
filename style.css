@@ -78,6 +78,7 @@ body {
     left: 25%;
     top: 25%;
     transition: ease-in-out 800ms;
+    transform: none;
 }
 
 .row::after {
