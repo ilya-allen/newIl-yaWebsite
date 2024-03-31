@@ -25,4 +25,8 @@ introButton.addEventListener('click', function() {
     introPage.style.transform = `scale(0.1, 0.1)`
     scrollBanner.style.height = '0px'
     bannerText.style.fontSize = '1px'
+    setTimeout(function() {
+        window.location.href = 'gallery.html'
+    }, 500)
+
 })

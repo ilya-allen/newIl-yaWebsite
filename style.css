@@ -120,3 +120,19 @@ body {
     border-radius: 5%;
     cursor: pointer;
 }
+
+.row_gal:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col_gal {
+    float: left;
+    width: 50%;
+}
+
+.col_img {
+    width: 500px;
+    height: 500px;
+}
