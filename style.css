@@ -5,10 +5,14 @@
     scroll-behavior: smooth;
 }
 
-body {
+.index_body {
     background-image: url("background.jpg");
     background-size: cover;
     background-color: black;
+}
+
+.gallery_body {
+    background-image: url("gallery.png");
 }
 
 .glass_box {
@@ -127,12 +131,37 @@ body {
     clear: both;
 }
 
+.row_gal {
+    margin-top: 100px;
+}
+
 .col_gal {
     float: left;
     width: 50%;
 }
 
 .col_img {
+    width: 650px;
+    height: auto;
+}
+
+.left_p {
+    margin-top: 5px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    font-size: 17px;
+    color: #333333;
+    text-align: right;
     width: 500px;
-    height: 500px;
+    float: right;
+    margin-right: 20px;
+}
+
+.left_title {
+    margin-top: 50px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    font-size: 25px;
+    text-align: right;
+    margin-right: 20px;
 }
