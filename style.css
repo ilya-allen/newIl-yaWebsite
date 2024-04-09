@@ -165,3 +165,21 @@
     text-align: right;
     margin-right: 20px;
 }
+
+.return_button {
+    background-color: rgb(201, 25, 207);
+    border: none;
+    border-right: 10px solid rgb(78, 25, 25);
+    width: 150px;
+    height: 75px;
+    position: relative;
+}
+
+.return_div {
+    position: fixed;
+}
+
+.home_img {
+    width: 150px;
+    height: 150px;
+}
