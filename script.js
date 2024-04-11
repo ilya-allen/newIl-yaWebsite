@@ -6,6 +6,7 @@ const scrollBanner = document.querySelector('.scroll_banner')
 const bannerText = document.querySelector('.banner_text');
 const introPage = document.querySelector('.intro_page')
 const introButton = document.querySelector('.intro_button')
+const returnButton = document.querySelector('.return_button');
 
 homeButton.addEventListener('click', function() {
     glassBox.style.height = '0px'
