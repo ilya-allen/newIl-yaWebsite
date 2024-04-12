@@ -150,11 +150,11 @@
     font-family: 'Roboto Mono', monospace;
     font-weight: 500;
     font-size: 17px;
-    color: #333333;
+    color: #000000;
     text-align: right;
     width: 500px;
     float: right;
-    margin-right: 20px;
+    margin-right: 150px;
 }
 
 .left_title {
@@ -163,7 +163,7 @@
     font-weight: 500;
     font-size: 25px;
     text-align: right;
-    margin-right: 20px;
+    margin-right: 150px;
 }
 
 .return_button {
@@ -171,6 +171,7 @@
     border: none;
     border-right: 10px solid rgb(78, 25, 25);
     width: 275px;
+    padding-left: 25px;
     height: 75px;
     position: relative;
     cursor: pointer;
@@ -180,6 +181,11 @@
     position: fixed;
     transform: translateX(-200px);
     cursor: pointer;
+    transition: 400ms ease-in-out;
+}
+
+.return_div:hover {
+    transform: translateX(0px);
 }
 
 .home_img {
