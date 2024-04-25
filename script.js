@@ -8,6 +8,7 @@ const introPage = document.querySelector('.intro_page')
 const introButton = document.querySelector('.intro_button')
 const returnButton = document.querySelector('.return_button');
 
+
 homeButton.addEventListener('click', function() {
     glassBox.style.height = '0px'
     homeButton.style.transform = 'translateX(-700px) rotateZ(90deg)'
@@ -31,3 +32,4 @@ introButton.addEventListener('click', function() {
     }, 500)
 
 })
+
