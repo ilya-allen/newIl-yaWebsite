@@ -7,7 +7,8 @@ const bannerText = document.querySelector('.banner_text');
 const introPage = document.querySelector('.intro_page')
 const introButton = document.querySelector('.intro_button')
 const returnButton = document.querySelector('.return_button');
-
+const socialsButton = document.querySelector('.intro_button_socials');
+const glassBoxID = document.querySelector('#glass_box_id');
 
 homeButton.addEventListener('click', function() {
     glassBox.style.height = '0px'
@@ -33,3 +34,11 @@ introButton.addEventListener('click', function() {
 
 })
 
+// Function needs fixing
+function removeAllChildren() {
+    while(glassBoxID.firstChild) {
+        glassBoxID.removeChild(val.lastChild)
+    }
+}
+
+socialsButton.addEventListener('click', removeAllChildren);
