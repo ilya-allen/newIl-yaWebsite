@@ -36,9 +36,8 @@ introButton.addEventListener('click', function() {
 
 // Function needs fixing
 function removeAllChildren() {
-    while(glassBoxID.firstChild) {
-        glassBoxID.removeChild(val.lastChild)
-    }
+    glassBoxID.innerHTML = ""
 }
 
 socialsButton.addEventListener('click', removeAllChildren);
+

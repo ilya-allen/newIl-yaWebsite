@@ -276,3 +276,24 @@ footer {
     background-color: black;
     font-size: 30px;
 }
+
+.icon {
+    margin-top: 20px;
+    display: inline;
+    width: 50px;
+    height: 50px;
+}
+
+.icon_text {
+    text-align: start;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+
+.container {
+    width: 500px;
+    height: 300px;
+    display: block;
+}
