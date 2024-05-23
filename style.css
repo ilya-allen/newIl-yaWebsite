@@ -279,14 +279,18 @@ footer {
 
 .icon {
     display: inline;
-    width: 50px;
-    height: 50px;
+    width: 75px;
+    height: 75px;
 }
 
 .icon_text {
     text-align: start;
     display: inline-block;
     margin-top: 12px;
+    font-family: "Exo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 50px;
 }
 
 
@@ -314,4 +318,14 @@ footer {
 .incol_text {
     float: left;
     width: 90%;
+}
+
+.return_main_div {
+    height: 100%;
+    width: 50px;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    background-color: #cd04ff;
+    display: block;
 }
