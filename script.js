@@ -39,5 +39,61 @@ function removeAllChildren() {
     glassBoxID.innerHTML = ""
 }
 
-socialsButton.addEventListener('click', removeAllChildren);
+function addSocial() {
+    removeAllChildren();
 
+    const markup = `
+        <div class="inrow">
+          <div class="incol_img">
+            <img class="icon" src="instagram.png">
+          </div>
+          <div class="incol_text">
+            <h2 class="icon_text">Instagram</h2>
+          </div>
+        </div>
+        <div class="inrow">
+          <div class="incol_img">
+            <img class="icon" src="youtube.png">
+          </div>
+          <div class="incol_text">
+            <h2 class="icon_text">Youtube</h2>
+          </div>
+        </div>
+        <div class="inrow">
+          <div class="incol_img">
+            <img class="icon" src="steam.png">
+          </div>
+          <div class="incol_text">
+            <h2 class="icon_text">Steam</h2>
+          </div>
+        </div>
+        <div class="inrow">
+          <div class="incol_img">
+            <img class="icon" src="twitch.png">
+          </div>
+          <div class="incol_text">
+            <h2 class="icon_text">Twitch</h2>
+          </div>
+        </div>
+        <div class="return_main_div">
+          <h1 class="return_main_text">RETURN</h1>
+        </div>
+    `
+    glassBoxID.innerHTML = markup;
+}
+
+function removeSocials() {
+    const markup = `
+        <div class="col">
+          <h1 class="intro_text">I am Il'ya Allen</h1>
+          <button class="intro_button"><img class="intro_button_image" src="images.png"></button>
+          <button class="intro_button"><img class="intro_button_socials" src="socials.png"></button>
+        </div>
+        <div class="col">
+          <img src="Avatar.png">
+        </div>
+    `
+    glassBoxID.innerHTML = markup;
+}
+
+socialsButton.addEventListener('click', removeAllChildren);
