@@ -10,6 +10,7 @@ const returnButton = document.querySelector('.return_button');
 const socialsButton = document.querySelector('.intro_button_socials');
 const glassBoxID = document.querySelector('#glass_box_id');
 
+
 homeButton.addEventListener('click', function() {
     glassBox.style.height = '0px'
     homeButton.style.transform = 'translateX(-700px) rotateZ(90deg)'
@@ -79,21 +80,31 @@ function addSocial() {
           <h1 class="return_main_text">RETURN</h1>
         </div>
     `
-    glassBoxID.innerHTML = markup;
+  glassBoxID.insertAdjacentHTML('afterbegin', markup)
+  createListener();
 }
 
 function removeSocials() {
-    const markup = `
-        <div class="col">
-          <h1 class="intro_text">I am Il'ya Allen</h1>
-          <button class="intro_button"><img class="intro_button_image" src="images.png"></button>
-          <button class="intro_button"><img class="intro_button_socials" src="socials.png"></button>
-        </div>
-        <div class="col">
-          <img src="Avatar.png">
-        </div>
-    `
-    glassBoxID.innerHTML = markup;
+  removeAllChildren();
+  const markup = `
+      <div class="col">
+        <h1 class="intro_text">I am Il'ya Allen</h1>
+        <button class="intro_button"><img class="intro_button_image" src="images.png"></button>
+        <button class="intro_button"><img class="intro_button_socials" src="socials.png"></button>
+      </div>
+      <div class="col">
+        <img src="Avatar.png">
+      </div>
+  `;
+  console.log('yur')  
+  glassBoxID.insertAdjacentHTML('afterbegin', markup)
 }
 
-socialsButton.addEventListener('click', removeAllChildren);
+function createListener() {
+  if(document.querySelector('.return_main_div')) {
+    document.querySelector('.return_main_div').addEventListener('click', removeSocials);
+  }
+}
+
+socialsButton.addEventListener('click', addSocial);
+
