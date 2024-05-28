@@ -10,6 +10,8 @@ const returnButton = document.querySelector('.return_button');
 const socialsButton = document.querySelector('.intro_button_socials');
 const glassBoxID = document.querySelector('#glass_box_id');
 
+let toggle = true;
+
 
 homeButton.addEventListener('click', function() {
     glassBox.style.height = '0px'
@@ -98,13 +100,20 @@ function removeSocials() {
   `;
   console.log('yur')  
   glassBoxID.insertAdjacentHTML('afterbegin', markup)
+  createListener();
 }
 
 function createListener() {
-  if(document.querySelector('.return_main_div')) {
+  if(toggle == false) {
     document.querySelector('.return_main_div').addEventListener('click', removeSocials);
+    toggle = !toggle;
+  }
+
+  if (toggle == true) {
+    document.querySelector('.intro_button_socials').addEventListener('click', addSocial);
+    toggle = !toggle;
   }
 }
 
-socialsButton.addEventListener('click', addSocial);
+createListener();
 
