@@ -5,12 +5,12 @@ const glassBox = document.querySelector('.glass_box');
 const scrollBanner = document.querySelector('.scroll_banner')
 const bannerText = document.querySelector('.banner_text');
 const introPage = document.querySelector('.intro_page')
-const introButton = document.querySelector('.intro_button')
+const introButton = document.querySelector('.intro_button_image')
 const returnButton = document.querySelector('.return_button');
 const socialsButton = document.querySelector('.intro_button_socials');
 const glassBoxID = document.querySelector('#glass_box_id');
 
-let toggle = true;
+let toggle = false;
 
 
 homeButton.addEventListener('click', function() {
@@ -83,6 +83,7 @@ function addSocial() {
         </div>
     `
   glassBoxID.insertAdjacentHTML('afterbegin', markup)
+  console.log(toggle)
   createListener();
 }
 
@@ -99,7 +100,7 @@ function removeSocials() {
       </div>
   `;
   console.log('yur')  
-  glassBoxID.insertAdjacentHTML('afterbegin', markup)
+  glassBoxID.insertAdjacentHTML('afterbegin', markup);
   createListener();
 }
 
@@ -115,5 +116,4 @@ function createListener() {
   }
 }
 
-createListener();
-
+document.querySelector('.intro_button_socials').addEventListener('click', addSocial);
