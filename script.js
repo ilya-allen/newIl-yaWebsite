@@ -116,5 +116,5 @@ function createListener() {
     toggle = !toggle;
   }
 }
-
+// yur
 document.querySelector('.intro_button_socials').addEventListener('click', addSocial);
