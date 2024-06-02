@@ -99,7 +99,9 @@
 }
 
 .intro_text {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "Rowdies", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 50px;
     margin-top: 200px;
     color: #000000;
