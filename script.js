@@ -80,12 +80,11 @@ function addSocial() {
           </div>
         </div>
         <div class="return_main_div">
-          <h1 class="return_main_text">RETURN</h1>
+          <h1 onclick="removeSocials()" class="return_main_text">RETURN</h1>
         </div>
     `
   glassBoxID.insertAdjacentHTML('afterbegin', markup)
   console.log(toggle)
-  createListener();
 }
 
 function removeSocials() {
@@ -94,7 +93,7 @@ function removeSocials() {
       <div class="col">
         <h1 class="intro_text">I am Il'ya Allen</h1>
         <button class="intro_button"><img class="intro_button_image" src="images.png"></button>
-        <button class="intro_button"><img class="intro_button_socials" src="socials.png"></button>
+        <button class="intro_button"><img onclick="addSocial()" class="intro_button_socials" src="socials.png"></button>
       </div>
       <div class="col">
         <img src="Avatar.png">
@@ -102,19 +101,8 @@ function removeSocials() {
   `;
   console.log('yur')  
   glassBoxID.insertAdjacentHTML('afterbegin', markup);
-  createListener();
 }
 
-function createListener() {
-  if(toggle == false) {
-    document.querySelector('.return_main_div').addEventListener('click', removeSocials);
-    toggle = !toggle;
-  }
-
-  if (toggle == true) {
-    document.querySelector('.intro_button_socials').addEventListener('click', addSocial);
-    toggle = !toggle;
-  }
-}
 // yur
 document.querySelector('.intro_button_socials').addEventListener('click', addSocial);
+
