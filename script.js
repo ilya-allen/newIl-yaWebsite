@@ -106,3 +106,4 @@ function removeSocials() {
 // yur
 document.querySelector('.intro_button_socials').addEventListener('click', addSocial);
 
+// today was fun time on kata
