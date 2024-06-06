@@ -12,7 +12,7 @@
 }
 
 .gallery_body {
-    background-image: url("gallery.png");
+    background-color: rgb(12, 110, 110);
 }
 
 .glass_box {
@@ -165,7 +165,7 @@
     font-family: 'Roboto Mono', monospace;
     font-weight: 500;
     font-size: 17px;
-    color: #000000;
+    color: #ffffff;
     text-align: right;
     width: 500px;
     float: right;
@@ -188,7 +188,7 @@
     font-family: 'Roboto Mono', monospace;
     font-weight: 500;
     font-size: 17px;
-    color: #000000;
+    color: #ffffff;
     text-align: left;
     width: 500px;
     float: left;
@@ -196,6 +196,7 @@
 }
 
 .left_title {
+    color: #000000;
     margin-top: 50px;
     font-family: 'Roboto Mono', monospace;
     font-weight: 500;
