@@ -49,7 +49,7 @@ function addSocial() {
     const markup = `
         <div class="inrow">
           <div class="incol_img">
-            <img class="icon" src="instagram.png">
+            <a href="https://www.instagram.com/the_ilya_allen/" target="_blank"><img class="icon" src="instagram.png"></a>
           </div>
           <div class="incol_text">
             <h2 class="icon_text">Instagram</h2>
@@ -57,7 +57,7 @@ function addSocial() {
         </div>
         <div class="inrow">
           <div class="incol_img">
-            <img class="icon" src="youtube.png">
+            <a href="https://www.youtube.com/channel/UC8gVhYtFntIG4V2ub2S3k-w" target="_blank"><img class="icon" src="youtube.png"></a>
           </div>
           <div class="incol_text">
             <h2 class="icon_text">Youtube</h2>
@@ -65,7 +65,7 @@ function addSocial() {
         </div>
         <div class="inrow">
           <div class="incol_img">
-            <img class="icon" src="steam.png">
+            <a href="https://steamcommunity.com/id/realwally1/" target="_blank"><img class="icon" src="steam.png"></a>
           </div>
           <div class="incol_text">
             <h2 class="icon_text">Steam</h2>
@@ -73,7 +73,7 @@ function addSocial() {
         </div>
         <div class="inrow">
           <div class="incol_img">
-            <img class="icon" src="twitch.png">
+            <a href="https://www.twitch.tv/realwallyproductions" target="_blank"><img class="icon" src="twitch.png"></a>
           </div>
           <div class="incol_text">
             <h2 class="icon_text">Twitch</h2>
@@ -92,7 +92,7 @@ function removeSocials() {
   const markup = `
       <div class="col">
         <h1 class="intro_text">I am Il'ya Allen</h1>
-        <button class="intro_button"><img class="intro_button_image" src="images.png"></button>
+        <button class="intro_button"><img onclick="nextPage()" class="intro_button_image" src="images.png"></button>
         <button class="intro_button"><img onclick="addSocial()" class="intro_button_socials" src="socials.png"></button>
       </div>
       <div class="col">
