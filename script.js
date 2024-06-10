@@ -43,6 +43,17 @@ function removeAllChildren() {
     glassBoxID.innerHTML = ""
 }
 
+function addVideo() {
+  removeAllChildren();
+  const markup = `
+  <iframe class="yt_upload" width="860" height="515" src="https://www.youtube.com/embed/videoseries?list=UU8gVhYtFntIG4V2ub2S3k-w" title="YouTube video player"   frameborder="0allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <div class="return_main_div">
+    <h1 onclick="removeSocials()" class="return_main_text">RETURN</h1>
+  </div>
+  `;
+  glassBoxID.insertAdjacentHTML('afterbegin', markup)
+}
+
 function addSocial() {
     removeAllChildren();
 
@@ -94,6 +105,7 @@ function removeSocials() {
         <h1 class="intro_text">I am Il'ya Allen</h1>
         <button class="intro_button"><img onclick="nextPage()" class="intro_button_image" src="images.png"></button>
         <button class="intro_button"><img onclick="addSocial()" class="intro_button_socials" src="socials.png"></button>
+        <button class="intro_button"><img onclick="addSocial()" class="intro_button_video" src="youtube.png"></button>
       </div>
       <div class="col">
         <img src="Avatar.png">
