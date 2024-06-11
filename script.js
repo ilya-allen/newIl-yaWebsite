@@ -46,7 +46,8 @@ function removeAllChildren() {
 function addVideo() {
   removeAllChildren();
   const markup = `
-  <iframe class="yt_upload" width="860" height="515" src="https://www.youtube.com/embed/videoseries?list=UU8gVhYtFntIG4V2ub2S3k-w" title="YouTube video player"   frameborder="0allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <h1 class="yt_title">Recent Youtube Upload</h1>
+  <iframe class="yt_upload" width="860" height="515" src="https://www.youtube.com/embed/videoseries?list=UU8gVhYtFntIG4V2ub2S3k-w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   <div class="return_main_div">
     <h1 onclick="removeSocials()" class="return_main_text">RETURN</h1>
   </div>
