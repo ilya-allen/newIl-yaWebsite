@@ -27,6 +27,18 @@ homeButton.addEventListener('click', function() {
 
 })
 
+function addText() {
+  homeButton.innerHTML = ""
+  const markup = `Il'ya Allen <br> Click for Site`;
+  homeButton.insertAdjacentHTML('afterbegin', markup)
+}
+
+function removeText() {
+  homeButton.innerHTML = ""
+  const markup = `Il'ya Allen`;
+  homeButton.insertAdjacentHTML('afterbegin', markup)
+}
+
 function nextPage() {
   introPage.style.transform = `scale(0.1, 0.1)`
   scrollBanner.style.height = '0px'
@@ -106,7 +118,7 @@ function removeSocials() {
         <h1 class="intro_text">I am Il'ya Allen</h1>
         <button class="intro_button"><img onclick="nextPage()" class="intro_button_image" src="images.png"></button>
         <button class="intro_button"><img onclick="addSocial()" class="intro_button_socials" src="socials.png"></button>
-        <button class="intro_button"><img onclick="addSocial()" class="intro_button_video" src="youtube.png"></button>
+        <button class="intro_button"><img onclick="addVideo()" class="intro_button_video" src="youtube.png"></button>
       </div>
       <div class="col">
         <img src="Avatar.png">

@@ -31,26 +31,23 @@
 }
 
 .home_button {
-    width: 200px;
+    width: 500px;
     height: 125px;
     margin-top: 100px;
     font-family: "Kode Mono", monospace;
-    text-align: right;
-    padding-left: 400px;
+    text-align: center;
     font-optical-sizing: auto;
     font-weight: 600;
     font-size: 50px;
     background-color: rgb(201, 25, 207);
     border: 0px;
-    border-right: 10px solid rgb(78, 25, 25);
+    border-bottom: 10px solid rgb(78, 25, 25);
     transition: 800ms ease-in-out;
 }
 
 .home_button:hover {
-    padding-left: 0px;
-    padding-right: 400px;
-    text-align: left;
-    border-left: 10px solid rgb(78, 25, 25);
+    padding-bottom: 200px;
+    text-align: center;
     border-right: none;
     cursor: pointer;
 }
@@ -282,6 +279,7 @@ footer {
     color: white;
     background-color: black;
     font-size: 30px;
+    cursor: pointer;
 }
 
 .icon {
