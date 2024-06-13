@@ -349,3 +349,34 @@ footer {
     font-size: 25px;
     margin-bottom: 25px;
 }
+
+.click_here {
+    opacity: 0;
+    font-size: 20px;
+}
+
+.home_button:hover > .click_here {
+    animation-name: fadeIn;
+    animation-duration: 800ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        padding-top: 0px;
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 50%;
+    }
+
+    100% {
+        padding-top: 200px;
+        opacity: 1;
+    }
+}
+
+.init_text {
+    position: fixed;
+}
