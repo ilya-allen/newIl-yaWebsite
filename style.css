@@ -37,20 +37,17 @@
     margin-top: 100px;
     font-family: "Kode Mono", monospace;
     text-align: center;
-    font-optical-sizing: auto;
     font-weight: 600;
     font-size: 50px;
     background-color: rgb(201, 25, 207);
     border: 0px;
     border-bottom: 10px solid rgb(78, 25, 25);
-    transition: 800ms ease-in-out;
 }
 
 .home_button:hover {
     padding-bottom: 200px;
-    text-align: center;
-    border-right: none;
     cursor: pointer;
+    transition: 1000ms linear;
 }
 
 .scroll_banner {
@@ -359,6 +356,7 @@ footer {
 .home_button:hover > .click_here {
     animation-name: fadeIn;
     animation-duration: 1000ms;
+    animation-timing-function: linear;
     animation-fill-mode: forwards;
 }
 
@@ -366,15 +364,14 @@ footer {
     0% {
         padding-top: 0px;
         opacity: 0;
+        font-size: 20px;
     }
 
-    50% {
-        opacity: 50%;
-    }
 
     100% {
-        padding-top: 250px;
+        padding-top: 200px;
         opacity: 1;
+        font-size: 60px;
     }
 }
 
