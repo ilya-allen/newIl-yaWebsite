@@ -9,6 +9,7 @@ const introButton = document.querySelector('.intro_button_image')
 const returnButton = document.querySelector('.return_button');
 const socialsButton = document.querySelector('.intro_button_socials');
 const glassBoxID = document.querySelector('#glass_box_id');
+const clickText = document.querySelector('.click_here');
 
 let toggle = false;
 
@@ -37,6 +38,13 @@ function removeText() {
   homeButton.innerHTML = ""
   const markup = `Il'ya Allen`;
   homeButton.insertAdjacentHTML('afterbegin', markup)
+}
+
+function holdHeight() {
+  homeButton.style.paddingBottom = '200px'
+  clickText.style.paddingTop = '200px'
+  clickText.style.fontSize = '60px';
+  clickText.style.opacity = '1'
 }
 
 function nextPage() {
