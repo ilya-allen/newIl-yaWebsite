@@ -41,10 +41,7 @@ function removeText() {
 }
 
 function holdHeight() {
-  homeButton.style.paddingBottom = '200px'
-  clickText.style.paddingTop = '200px'
-  clickText.style.fontSize = '60px';
-  clickText.style.opacity = '1'
+  clickText.classList.add("new_click")
 }
 
 function nextPage() {

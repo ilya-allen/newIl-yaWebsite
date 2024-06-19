@@ -351,6 +351,7 @@ footer {
 .click_here {
     opacity: 0;
     font-size: 20px;
+    transition: 800ms ease-in-out;
 }
 
 .home_button:hover > .click_here {
@@ -360,19 +361,10 @@ footer {
     animation-fill-mode: forwards;
 }
 
-@keyframes fadeIn {
-    0% {
-        padding-top: 0px;
-        opacity: 0;
-        font-size: 20px;
-    }
-
-
-    100% {
-        padding-top: 200px;
-        opacity: 1;
-        font-size: 60px;
-    }
+.new_click {
+    padding-top: 200px;
+    opacity: 1;
+    font-size: 60px;
 }
 
 .init_text {
