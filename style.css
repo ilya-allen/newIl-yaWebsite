@@ -42,12 +42,13 @@
     background-color: rgb(201, 25, 207);
     border: 0px;
     border-bottom: 10px solid rgb(78, 25, 25);
+    cursor: pointer;
 }
 
-.home_button:hover {
-    padding-bottom: 200px;
+.new_home_button {
+    height: 400px;
     cursor: pointer;
-    transition: 1000ms linear;
+    transition: 800ms linear;
 }
 
 .scroll_banner {
@@ -362,7 +363,7 @@ footer {
 }
 
 .new_click {
-    padding-top: 200px;
+    margin-top: 200px;
     opacity: 1;
     font-size: 60px;
 }

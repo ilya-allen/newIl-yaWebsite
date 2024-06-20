@@ -14,8 +14,9 @@ const clickText = document.querySelector('.click_here');
 let toggle = false;
 
 
-homeButton.addEventListener('click', function() {
-    glassBox.style.height = '0px'
+
+function buttonTransition() {
+  glassBox.style.height = '0px'
     homeButton.style.transform = 'translateX(-700px) rotateZ(90deg)'
     homeButton.style.opacity = '0%';
 
@@ -25,8 +26,7 @@ homeButton.addEventListener('click', function() {
         bannerText.style.opacity = '100%'
         homeButton.style.width = '1px'
     }, 500)
-
-})
+}
 
 function addText() {
   homeButton.innerHTML = ""
@@ -42,6 +42,7 @@ function removeText() {
 
 function holdHeight() {
   clickText.classList.add("new_click")
+  homeButton.classList.add("new_home_button")
 }
 
 function nextPage() {
