@@ -10,6 +10,9 @@ const returnButton = document.querySelector('.return_button');
 const socialsButton = document.querySelector('.intro_button_socials');
 const glassBoxID = document.querySelector('#glass_box_id');
 const clickText = document.querySelector('.click_here');
+const newClick = document.querySelector('.button_a')
+const initText = document.querySelector('.init_text')
+
 
 let toggle = false;
 
@@ -43,6 +46,8 @@ function removeText() {
 function holdHeight() {
   clickText.classList.add("new_click")
   homeButton.classList.add("new_home_button")
+  newClick.classList.add("button_a_height")
+  initText.style.opacity = 0;
 }
 
 function nextPage() {

@@ -49,6 +49,12 @@
     height: 400px;
     cursor: pointer;
     transition: 800ms linear;
+    cursor: pointer;
+}
+
+.button_a_height {
+    height: 400px;
+    width: 500px;
 }
 
 .scroll_banner {
@@ -374,6 +380,13 @@ footer {
     left: 25%;
     font-size: 40px;
     text-align: center;
+    transition: 800ms ease-in-out;
+}
+
+.init_img {
+    position: absolute;
+    height: 50px;
+    width: 50px;
 }
 
 /* where the update at */
