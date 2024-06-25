@@ -12,6 +12,7 @@ const glassBoxID = document.querySelector('#glass_box_id');
 const clickText = document.querySelector('.click_here');
 const newClick = document.querySelector('.button_a')
 const initText = document.querySelector('.init_text')
+const initImg = document.querySelector('.init_img')
 
 
 let toggle = false;
@@ -47,6 +48,7 @@ function holdHeight() {
   clickText.classList.add("new_click")
   homeButton.classList.add("new_home_button")
   newClick.classList.add("button_a_height")
+  initImg.classList.add("img_expand")
   initText.style.opacity = 0;
 }
 
