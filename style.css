@@ -46,7 +46,7 @@
 }
 
 .new_home_button {
-    height: 400px;
+    height: 500px;
     cursor: pointer;
     transition: 800ms linear;
     cursor: pointer;
@@ -369,7 +369,7 @@ footer {
 }
 
 .new_click {
-    margin-top: 200px;
+    margin-top: 300px;
     opacity: 1;
     font-size: 60px;
 }
@@ -388,11 +388,15 @@ footer {
     height: 50px;
     width: 50px;
     transition: 800ms linear;
-    left: 100px;
+    left: 45%;
+    opacity: 0;
+    top: 10px
 }
 
 .img_expand {
     width: 300px;
     height: 300px;
+    left: 100px;
+    opacity: 1;
 }
 /* where the update at */
