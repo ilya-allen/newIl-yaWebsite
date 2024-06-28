@@ -1,12 +1,13 @@
 'use strict';
 
+
+
 const homeButton = document.querySelector('.home_button');
 const glassBox = document.querySelector('.glass_box');
 const scrollBanner = document.querySelector('.scroll_banner')
 const bannerText = document.querySelector('.banner_text');
 const introPage = document.querySelector('.intro_page')
 const introButton = document.querySelector('.intro_button_image')
-const returnButton = document.querySelector('.return_button');
 const socialsButton = document.querySelector('.intro_button_socials');
 const glassBoxID = document.querySelector('#glass_box_id');
 const clickText = document.querySelector('.click_here');
