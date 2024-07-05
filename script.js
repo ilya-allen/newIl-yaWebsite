@@ -31,6 +31,10 @@ function buttonTransition() {
         bannerText.style.opacity = '100%'
         homeButton.style.width = '1px'
     }, 500)
+
+    setTimeout(function() {
+      scrollBanner.style.opacity = '0';
+  }, 1500)
 }
 
 function addText() {
