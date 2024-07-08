@@ -399,6 +399,19 @@ footer {
     left: 100px;
     opacity: 1;
 }
+
+.docs_title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    color: #290f30;
+}
+
+.cv_link {
+    margin-top: 50px;
+    cursor: pointer;
+    color: greenyellow;
+    text-decoration: underline;
+}
 /* where the update at */
 
 /* physics */

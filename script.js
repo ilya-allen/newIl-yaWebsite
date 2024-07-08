@@ -34,7 +34,7 @@ function buttonTransition() {
 
     setTimeout(function() {
       scrollBanner.style.opacity = '0';
-  }, 1500)
+  }, 3000)
 }
 
 function addText() {
@@ -82,6 +82,19 @@ function addVideo() {
     <h1 onclick="removeSocials()" class="return_main_text">RETURN</h1>
   </div>
   `;
+  glassBoxID.insertAdjacentHTML('afterbegin', markup)
+}
+
+function addDocs() {
+  removeAllChildren();
+  const markup = `
+  <h1 class="docs_title">Downloadable Files</h1>
+  <h2 class="cv_link">Download CV</h2>
+  <div class="return_main_div">
+    <h1 onclick="removeSocials()" class="return_main_text">RETURN</h1>
+  </div>
+  `;
+  glassBoxID.style.height = '500px'
   glassBoxID.insertAdjacentHTML('afterbegin', markup)
 }
 
