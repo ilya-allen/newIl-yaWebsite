@@ -89,7 +89,7 @@ function addDocs() {
   removeAllChildren();
   const markup = `
   <h1 class="docs_title">Downloadable Files</h1>
-  <h2 class="cv_link">Download CV</h2>
+  <a href="cv.pdf" download><h2 class="cv_link">Download CV</h2></a>
   <div class="return_main_div">
     <h1 onclick="removeSocials()" class="return_main_text">RETURN</h1>
   </div>
@@ -150,6 +150,7 @@ function removeSocials() {
         <button class="intro_button"><img onclick="nextPage()" class="intro_button_image" src="images.png"></button>
         <button class="intro_button"><img onclick="addSocial()" class="intro_button_socials" src="socials.png"></button>
         <button class="intro_button"><img onclick="addVideo()" class="intro_button_video" src="youtube.png"></button>
+        <button class="intro_button"><img onclick="addDocs()" class="intro_button_video" src="docs.png"></button>
       </div>
       <div class="col">
         <img src="Avatar.png">
