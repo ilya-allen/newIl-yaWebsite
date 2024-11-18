@@ -1,7 +1,7 @@
 'use strict';
 
 
-
+// study
 const homeButton = document.querySelector('.home_button');
 const glassBox = document.querySelector('.glass_box');
 const bannerText = document.querySelector('.banner_text');
